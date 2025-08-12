@@ -39,7 +39,7 @@ Aide Cuevas (LinkedIn in profile)
 
 ## Version History
 
-*0.3
+* 0.3
     * ADD HERE
 *  0.2
     * ADD HERE
