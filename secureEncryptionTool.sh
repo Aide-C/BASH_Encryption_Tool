@@ -6,6 +6,7 @@ echo "============================================="
 read -p "Choose (1) to encrypt a message or (2) to decrypt a message:" choice
 case $choice in 
   1)
+    echo #spacing in the terminal
     while [ -z "$message" ]
     do
       read -r -p "Enter your secret message (Use \n to start a new line):" message
@@ -43,9 +44,11 @@ case $choice in
     echo -e $message | openssl enc -aes-256-cbc -a -salt -pbkdf2 -out "$name.enc" -pass pass:$password
     unset password
     unset message
+    echo #spacing in the terminal
     echo "Message was encrypted as $name.enc"
   ;;
   2)
+    echo #spacing in the terminal
     while [ -z $filename ]
     do
       read -p "Enter the encrypted file name you want to decrypt:" filename
@@ -74,8 +77,10 @@ case $choice in
     done
     
     unset password
+    echo #spacing in the terminal
     cat ${filename/enc/dec}
-
+    echo #spacing in the terminal
+    
     read -p "Message was saved as ${filename/enc/dec}. Do you wish to delete this file? (Y or N):" input
     
     while [[ "${input^^}" != "Y" && "${input^^}" != "N" ]]
