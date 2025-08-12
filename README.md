@@ -1,6 +1,6 @@
 # BASH_Encryption_Tool
 
-ADD HERE: 
+A text message encryption and decryption program to protect data from unauthorized access.
 
 ## Description 
 
