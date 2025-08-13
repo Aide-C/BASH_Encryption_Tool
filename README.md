@@ -44,7 +44,10 @@ Aide Cuevas (LinkedIn in profile)
 *  0.2
     * ADD HERE
 * 0.1
-    * ADD HERE
+    * Prompts that asked the user for respective details for encryption or decryption, like the filename and the password
+    * No form of error checking for user input that was null or incorrect
+    * Sensitive information, such as the plain text message and password, was stored in their respective variables in the current shell's environment
+    * //
 
 ## License
 
