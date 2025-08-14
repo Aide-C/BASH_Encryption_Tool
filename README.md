@@ -40,18 +40,21 @@ Aide Cuevas (LinkedIn in profile)
 ## Version History
 
 * 0.3
-    * Password strength check
-    * delete output file
+    * Added the option for users to delete the decryption output file for security purposes
+    * Added password strength check to combat brute force guessing; must be 8 characters and have at least one uppercase letter, lowercase letter, number, and special character
+    * Users' passwords are hidden in the terminal for security purposes
+      
 *  0.2
-    * Added error checking to all user input prompts to check for null responses
-    * 
-    * Added decryption password error checking for decryption; only displays the decrypted message if the password was correct
-    * Used a while loop to check if the first line of the output file was "bad decrypt" which would display an error message and prompt for the correct password
+    * Added null error-checking feature to all user input prompts
+    * Added an override file feature during encryption; if the file name already exists, ask the user if they want to override the file or use a different file name
+    * Added a verify encrypted file feature during decryption; if the file the user wants to decrypt doesn't exist, display error message and ask for the correct file name
+    * Added decryption password error checking feature; only displays the decrypted message if the password was correct
+    * Decryption password error checking feature: Used a while loop to check if the first line of the output file was "bad decrypt", which would display an error message and prompt for the correct password
     * Used the unset command on message and password variables after the openssl commands to remove the sensitive information from shell memory
 
 * 0.1
     * Prompts that asked the user for respective details for encryption or decryption, like the filename and the password
-    * No form of error checking for user inputs that were null or incorrect
+    * No form of null or incorrect input error checking for user responses
     * Sensitive information, such as the plain text message and password, was stored in their respective variables in the current shell's environment
 
 ## License
