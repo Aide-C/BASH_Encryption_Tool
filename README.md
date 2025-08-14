@@ -40,14 +40,19 @@ Aide Cuevas (LinkedIn in profile)
 ## Version History
 
 * 0.3
-    * ADD HERE
+    * Password strength check
+    * delete output file
 *  0.2
-    * ADD HERE
+    * Added error checking to all user input prompts to check for null responses
+    * 
+    * Added decryption password error checking for decryption; only displays the decrypted message if the password was correct
+    * Used a while loop to check if the first line of the output file was "bad decrypt" which would display an error message and prompt for the correct password
+    * Used the unset command on message and password variables after the openssl commands to remove the sensitive information from shell memory
+
 * 0.1
     * Prompts that asked the user for respective details for encryption or decryption, like the filename and the password
-    * No form of error checking for user input that was null or incorrect
+    * No form of error checking for user inputs that were null or incorrect
     * Sensitive information, such as the plain text message and password, was stored in their respective variables in the current shell's environment
-    * //
 
 ## License
 
