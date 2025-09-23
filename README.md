@@ -22,7 +22,7 @@ Using the scenario that I am a cybersecurity analyst at a tech company tasked wi
 * Clone repository
 * Fork the repository
 
-### Executing program
+### Executing Program
 
 * Open the terminal and in the root directory, run the command to allow execute permission:
 ```
