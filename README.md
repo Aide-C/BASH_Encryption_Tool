@@ -1,4 +1,4 @@
-# BASH_Encryption_Tool
+# Encryption_and_Decryption_Tool
 
 A text message encryption and decryption program to protect data from unauthorized access, which was a standalone project on LinkedIn Learning. The two main outcomes I aim to achieve throughout this project are improving my Bash scripting and encryption skills.
 
